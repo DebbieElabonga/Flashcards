@@ -26,6 +26,7 @@ class Subject(models.Model):
 
 
 class Card(models.Model):
+    user = models.ForeignKey(User,on_delete=models.CASCADE)
     title = models.CharField(max_length=50)
     subject = models.ForeignKey(Subject,on_delete=models.CASCADE)
     note = models.TextField(max_length=30000)

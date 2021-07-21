@@ -23,13 +23,16 @@
             {% for card in cards%}
             <div class="col-md-4">
                 <div class="card mb-3">
-                    <img class="card-img-top" src="..." alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">{{card.title}}</h5>
                         <h5 class="card-title">{{card.subject}}</h5>
                         <p class="card-text">{{card.note}}.</p>
                         <p class="card-text"><small class="text-muted">{{card.time}}</small></p>
                     </div>
+                    <button class="btn btn-danger">Delete</button>
+                    <span>   
+                                         <button class="btn btn-secondary">Update</button>
+                    </span>
                 </div>
                 <hr>
 

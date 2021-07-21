@@ -9,7 +9,7 @@ class Profile(models.Model):
     contact = models.IntegerField()
 
     def __str__(self):
-        return self.user.username
+        return self.user.user
 
     def save_profile(self):
         self.save()

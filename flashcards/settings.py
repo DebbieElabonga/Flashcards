@@ -39,8 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app',
+    'bootstrap3',
+    'crispy_forms',
+    'widget_tweaks',
     'bootstrap5',
-    'star_ratings',
+    
 ]
 
 MIDDLEWARE = [
@@ -83,8 +86,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'flashcards',
-        'USER':'moringa',
-        'PASSWORD':'access'
+        'USER':'hamisi',
+        'PASSWORD':'1995'
     }
 }
 
@@ -135,3 +138,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #.........
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+LOGIN_REDIRECT_URL = 'index'
+
+LOGOUT_REDIRECT_URL = 'signup'

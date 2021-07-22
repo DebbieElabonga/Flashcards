@@ -39,6 +39,7 @@ class Migration(migrations.Migration):
                 ('note', models.TextField(max_length=30000)),
                 ('time', models.DateTimeField(auto_now_add=True)),
                 ('subject', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='app.subject')),
+                ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
             ],
         ),
     ]
